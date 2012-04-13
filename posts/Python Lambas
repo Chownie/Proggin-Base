@@ -1,0 +1,35 @@
+### How to create a lambda function in Python?
+
+A lambda function is essentially a function that has no name. They are often used as parameters to other functions.
+
+A simple lambda function to square numbers may be created as follows:
+
+```python
+# Create a lambda function that takes one parameter and returns it's square
+# and assign to the variable f
+f = lambda x: x*x
+ 
+assert f(2) == 4
+assert f(3) == 9
+```
+
+We can also pass lambda functions as function parameters without assigning to to intermediate variables.
+
+```python
+# Create a function that takes a function and a list, then applies the function to each element of the list
+def map(f, list):
+    for i in range(0,len(list)):
+        list[i] = f(list[i])
+ 
+# Create a simple test list
+list = [1,2,3]
+ 
+# Call our map function passing in a lambda square function and the test list
+map( lambda x: x*x, list )
+ 
+assert list[0] == 1
+assert list[1] == 4
+assert list[2] == 9
+```
+
+*Note that lambda functions do **not** include a return statement.*

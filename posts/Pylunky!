@@ -1,0 +1,10 @@
+Pylunky is one of my pet projects. It's a 2D platformer currently undergoing slow redevelopment.
+
+![Alt Text](/static/images/screenshot.png)
+
+My eventual goal is to have pylunky be a somewhat challenging generated dungeoneering platformer.
+
+Currently it experiences issues with loading resources and in some places suffers from bad design
+*(Objects in some cases directly modify one another's attributes instead of requesting it via a function)*
+
+With co-op possibly on the roadmap if I can pick up the skills to design a P2P (or maybe even C2S) system.

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/static/site.css" />
+		<script src="/static/highlight/highlight.pack.js"></script>
+		<script src="/static/jquery.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#content img').each(function() {
+				var imgClass = $(this).attr('class');
+				$(this).wrap($("<a/>").attr("href", $(this).attr("src")));
+				$(this).wrap('<div class="image"><span class="image-wrap ' + imgClass + '" style="width: 200px; height: 200px;"/></div>');
+				$(this).removeAttr('class');
+			});
+			$("tr:nth-child(even)").addClass("alt");
+		});
+		</script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<title>{{title}}</title>
+		{{{script}}}
+	</head>
+	<body>
+		<div id="header">
+			<h1>Progg<a style="text-decoration: none;color: #777;" href="/">in</a></h1>
+		</div>
+		<div id="content">
+			{{{content}}}
+		</div>
+	</body>
+</html>

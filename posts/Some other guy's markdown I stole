@@ -1,0 +1,38 @@
+4devs - One Liners for Developers
+=================================
+
+Table of contents
+-----------------
+
+1. Introduction
+2. Requirements
+3. Reporting bugs
+
+
+1. Introduction 
+---------------
+
+4devs is a list of one liners that grew into a group of cookbooks for both
+general programming tasks and language specific tasks and solutions.
+
+4alldevs.txt - Examples that apply to programming in any language
+4perldevs.txt - Examples gear towards Perl development and tools
+
+The latest version of these files can always be found at:
+    http://github.com/kimmel/
+
+
+
+2. Requirements
+---------------
+
+* Perl 5.10 or newer is recommended however, alternate one-liners are provided
+to run on older versions of Perl. Most of the 5.10 examples presented are
+shorter than their backwards compatible counterparts.
+* Each cookbook has its own requirements section listing any dependencies
+
+
+
+3. Reporting bugs
+-----------------
+Bugs can be reported via the project's Issue queue: https://github.com/kimmel/ /issues . Pull Requests are always welcome.
